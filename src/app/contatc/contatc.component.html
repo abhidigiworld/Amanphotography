@@ -1,0 +1,37 @@
+<div class="contact_main_box">
+    <div class="form">
+        <h1>Contact Form</h1>
+        <form action="process_form.php" method="post">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required>
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required>
+
+            <label for="role">Your Role:</label>
+            <select id="role" name="role">
+                <option value="bride">Bride</option>
+                <option value="groom">Groom</option>
+                <option value="event_manager">Event Manager</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone No:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="wedding_date">Wedding Date:</label>
+            <input type="date" id="wedding_date" name="wedding_date" required>
+
+            <label for="reception_city">Reception City:</label>
+            <input type="text" id="reception_city" name="reception_city" required>
+
+            <label for="reception_venue">Reception Venue:</label>
+            <input type="text" id="reception_venue" name="reception_venue" required>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+</div>

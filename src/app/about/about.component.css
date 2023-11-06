@@ -1,0 +1,121 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.left img {
+    max-width: 50%; 
+    border-radius: 50%;
+    box-shadow: 0 13px 8px rgba(7, 18, 33, 22.2);
+    transition: transform 0.5s ease-in-out;
+    margin-bottom: 2%;
+}
+
+.left img:hover {
+    transform: scale(1.1);
+}
+
+.left p,
+.right .upper-text,
+.right .lower-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2%;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .left,
+    .right {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .left p {
+        font-size: 18px;
+    }
+
+}
+
+/* images floating css */
+
+.full_container {
+    width: 100%;
+    height: 450px; 
+    background: url("../../assets/images/image6.jpg") no-repeat center;
+    background-size: cover;
+    margin-bottom: 2%;
+    position: relative;
+}
+
+.small_image3, .small_image1, .small_image2, .small_image4 {
+    position: absolute;
+    width: 150px; 
+    border-radius: 5px;
+    box-shadow: 0 13px 8px rgba(7, 18, 33, 22.2);
+    transition: .2s ease-in;
+}
+
+.small_image3:hover, .small_image1:hover, .small_image2:hover, .small_image4:hover{
+    transform: scale(1.3);
+}
+
+.small_image1 {
+    top: 20px; 
+    left: 20px; 
+}
+
+.small_image4 {
+    top: 150px; 
+    left: 180px; 
+}
+
+.small_image2 {
+    top: -50px; 
+    right: 20px; 
+}
+
+.small_image3 {
+    bottom: -10px; 
+    right: 200px; 
+}
+
+.text_box {
+    position: absolute;
+    font-size: 20px;
+    bottom: 25px; 
+    left: 20px; 
+    color: white;
+}
+
+@media only screen and (max-width: 900px) {
+    .small_image3 {
+        top: 180px; 
+        right: 200px; 
+    }
+}

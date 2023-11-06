@@ -1,0 +1,77 @@
+<div id="main">
+  <!-- navigatuion pane html code -->
+  <div id="nav">
+    <div class="image"> <img src="../assets/images/logo.png" alt="logo" class="src" width="100px"></div>
+    <div class="menu">
+      <ul class="navpan">
+        <li> <a routerLink="home">Home</a> </li>
+        <li><a routerLink="portfolio">Portfolio</a></li>
+        <li><a routerLink="about">About</a></li>
+        <li><a routerLink="contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- welcome page content -->
+  <div class="inner_box">
+    <div class="image_box">
+      <img class="image_box_side" src="../assets/images/image4.JPG" alt="image4">
+      <img class="image_center" src="../assets/images/image2.jpg" alt="image2">
+      <img class="image_box_side" src="../assets/images/image3.JPG" alt="image3">
+    </div>
+    <div class="inner_box_content">
+      <h2>Welcome! to <br> Aman Photography</h2>
+    </div>
+  </div>
+
+   <!-- loading component of diffrent  -->
+   <router-outlet></router-outlet>
+
+  <!-- social media container  -->
+  <div class="social-media-container">
+    <div class="text-div">
+        FOLLOW US ON INSTAGRAM
+       
+    </div>
+    <div class="image-div">
+      <p class="handle">@weddingphotography_india</p>
+        <img src="../assets/images/image3.JPG" alt="Image 1">
+        <img src="../assets/images/image5.jpg" alt="Image 2">
+        <img src="../assets/images/image6.jpg" alt="Image 3">
+        <img src="../assets/images/image7.jpg" alt="Image 4">
+        <img src="../assets/images/image9.jpg" alt="Image 5">
+    </div>
+</div>
+ <!-- social media tags -->
+    <div class="social-media-handler">
+        <a href="#" class="social-icon1"><img src="../assets/icon/fb.png" alt="fb" class="icon"></a>
+        <a href="#" class="social-icon2"><img src="../assets/icon/tw.png" alt="tw" class="icon"></a>
+        <a href="#" class="social-icon3"><img src="../assets/icon/in.png" alt="in" class="icon"></a>
+    </div>
+ 
+  <!-- footer section html code -->
+  <footer>
+    <div class="menu2">
+      <ul class="footer_navpan">
+        <li> <a routerLink="home">Home</a> </li>
+        <li><a routerLink="portfolio">Portfolio</a></li>
+        <li><a routerLink="about">About</a></li>
+        <li><a routerLink="contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer_content">
+      <div class="address">
+        <h3>Contact Information</h3>
+        <p>#123 First Floor</p>
+        <p>Ludhiana, 141010</p>
+        <p>Email: amansharmaphotograpger@gmail.com</p>
+        <p>Phone: +91 9653984287</p>
+      </div>
+      <div class="about_photographer">
+        <h3>About the Photographer</h3>
+        <p>Welcome to my photography website! I capture the beauty of the world through my lens. Explore my portfolio to
+          see my work.</p>
+      </div>
+    </div>
+  </footer>
+</div>
